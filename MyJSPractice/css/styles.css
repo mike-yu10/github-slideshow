@@ -1,0 +1,42 @@
+.container{
+  /* background-color: pink; */
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  cursor:pointer;
+  transition: 0.8s;
+  margin: 0 8px 8px 0;
+  text-align: center;
+  line-height: 100px;
+  display:inline-block;
+ 
+}
+.MURO{
+  background: pink;
+  border-radius: 50%;
+transform: rotate(360deg);
+}
+.muro {
+  transform: scale(0.9);
+}
+
+body {
+  /* display: flex;    */
+  /* 対象を横に並べる */
+  flex-wrap : wrap;/*対象が多いとき折り返す*/
+  /* background-color: yellow */
+  text-align: center;
+}
+
+.FindingMURO{
+  display: flex;
+   background-color: tomato;
+}

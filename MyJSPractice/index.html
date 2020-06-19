@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset = "utf-8">
+    <title>Finding MURO</title>
+  </head>
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <header>
+<div class="container">
+    <h1>
+      MURO探しゲーム
+    </h1>
+    <p>
+      水色の四角形を選択してMUROを探そう！！
+    </p>
+  </div>
+  </header>
+  
+  
+  <body>
+
+
+ 
+
+<script>
+    'use strict';
+  
+  const num = 5; 
+  const winner = Math.floor(Math.random() * num);   //0 ~ 4
+  
+  for (let i = 0; i < num; i++) {
+    const div = document.createElement('div')
+    div.classList.add('box');
+  // div.textContent = i;
+  
+    div.addEventListener('click', () => {
+      // div.classList.toggle('circle');
+      if (i === winner){
+        div.textContent = 'MURO!!';
+        div.classList.add('MURO')
+      } else {
+        div.textContent = 'muro...';
+        div.classList.add('muro');
+  
+      }
+    });
+  
+    document.body.appendChild(div);
+      
+   }
+  </script>
+   <div class="FindingMURO"></div> </div>
+
+  </body>
+</html>
+
+
